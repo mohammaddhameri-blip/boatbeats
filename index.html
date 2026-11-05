@@ -128,7 +128,6 @@ function handleHit(t,via){
  speed=clamp(speed+strokeBoost(score,Number(E.crew.value),closest.noteCount),0,MAX_SPEED);
  feedback((isPerfect?'PERFECT!':'GOOD!')+' · CREW STROKE'+(combo>=4?' · '+combo+' COMBO':''),isPerfect?'perfect':'good');
 }
-closest.judged=true;judged++;hits++;combo++;const isPerfect=minDiff<=PERFECT_WINDOW;const score=isPerfect?1:.65;if(isPerfect)perfect++;else good++;scoreSum+=score;const boost=strokeBoost(score,Number(E.crew.value),closest.noteCount);speed=clamp(speed+boost,0,MAX_SPEED);feedback(`${isPerfect?'PERFECT!':'GOOD!'} · CREW STROKE${combo>=4?' · '+combo+' COMBO':''}`,isPerfect?'perfect':'good');}
 function markMisses(now){
  for(const e of events){if(e.t>now)break;
  if(e.demo){if(!e.judged){e.judged=true;e.result='listen';speed=clamp(speed+strokeBoost(1,Number(E.crew.value),e.noteCount),0,MAX_SPEED);noteStatus(e);}continue;}
