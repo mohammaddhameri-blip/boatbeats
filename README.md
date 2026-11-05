@@ -1,4 +1,4 @@
-# BoatBeats v1.0
+# BoatBeats v1.2
 
 A responsive single-file rhythm-powered boat racing game for phones, tablets, laptops and smartboards.
 
@@ -8,6 +8,7 @@ A responsive single-file rhythm-powered boat racing game for phones, tablets, la
 2. Select crew size, difficulty and input type.
 3. Press **START RACE**.
 4. Follow the audible drums and highlighted beat boxes. Clap or tap at the indicated times. Better beat accuracy adds more speed; missed beats slow you down.
+5. Each drum rhythm plays for **four full repetitions (four bars)**, then the next pattern starts automatically. The beat boxes and `P1 · 1/4` progress indicator update at the exact new bar. Four patterns rotate within the chosen difficulty.
 
 ## Microphone mode
 
@@ -21,9 +22,9 @@ The game detects sharp percussive sound onsets and measures *rhythmic timing*. I
 
 - **Mic**: clap, use a DIY drum or tap a desk; detection uses live device audio and an adaptive onset threshold.
 - **Tap to test**: use the big drum button or Spacebar (no mic required).
-- **Easy**: steady four-beat rhythm, 92 BPM.
-- **Medium**: additional off-beat notes, 106 BPM.
-- **Hard**: faster syncopated rhythm, 116 BPM.
+- **Easy**: four simple rhythmic variations, 92 BPM.
+- **Medium**: four mixed off-beat patterns, 106 BPM.
+- **Hard**: four faster syncopated patterns, 116 BPM.
 
 ## Technical details
 
